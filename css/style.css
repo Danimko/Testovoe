@@ -48,6 +48,7 @@ html{
     align-items: center;
     border: 2px solid #C8D9FB;
     transition: all ease 0.2s;
+    /* cursor: pointer; */
 }
 
 .slide:hover{
