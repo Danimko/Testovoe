@@ -40,7 +40,7 @@ html{
 }
 
 .slide{
-    display: none;
+    display: block;
     width: 16.25rem;
     height: 26.25rem;
     box-sizing: border-box;
@@ -53,11 +53,6 @@ html{
 .slide:hover{
     border: 2px solid #527CCD;
     transition: 0.2s;
-}
-
-.slide.active{
-    display: block;
-    transition: all ease 0.2s;
 }
 
 .slide__img{

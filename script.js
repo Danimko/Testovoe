@@ -44,6 +44,11 @@ const prevSlide = () => {
 };
 
 /////свайпы(только мобильная версия)
+
+
+sliderLine.addEventListener("touchstart", handleTouchstart, false);
+sliderLine.addEventListener("touchmove", handleTouchMove, false);
+
 function handleTouchstart(event) {
   const firstTouch = event.touches[0];
   x1 = firstTouch.clientX;
@@ -72,6 +77,23 @@ function handleTouchMove(event) {
   y1 = null;
 }
 
+let lastPos;
+
+sliderLine.addEventListener("mousedown", e => {
+  lastPos = e.clientX;
+  if (mousedown = true) {
+    
+    sliderLine.addEventListener("mousemove", nextSlide)
+    return;
+  };
+});
+
+// function nextSlide1(e){
+//   if(event.buttons == 0){
+//     window.removeEventListener("mousemove", showMenu);
+//   }
+// }
+
 
 
 next.addEventListener("click", nextSlide);
@@ -80,6 +102,4 @@ prev.addEventListener("click", prevSlide);
 
 setInterval(nextSlide, 4000);
 
-sliderLine.addEventListener("touchstart", handleTouchstart, false);
-sliderLine.addEventListener("touchmove", handleTouchMove, false);
 
