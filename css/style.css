@@ -23,13 +23,9 @@ html{
   }
 
 .wrapper{
-    /* display: flex;
-    justify-content: center; */
     width: 16.25rem;
     margin: auto;
     overflow: hidden;
-    /* flex-direction: column; */
-    /* align-items: center; */
 }
 
 .slider__wrapper{
@@ -47,15 +43,11 @@ html{
     display: none;
     width: 16.25rem;
     height: 26.25rem;
-    /* width: 260px;
-    height: 420px; */
     box-sizing: border-box;
     flex-direction: column;
-    /* justify-content: space-between; */
     align-items: center;
     border: 2px solid #C8D9FB;
     transition: all ease 0.2s;
-    /* margin: auto; */
 }
 
 .slide:hover{
@@ -110,7 +102,6 @@ html{
     margin-top: 0.625rem;
     text-align: start;
     font-size: 0.75rem;
-    /* margin-right: 9.375rem; */
     margin-left: 16px;
 
 }
