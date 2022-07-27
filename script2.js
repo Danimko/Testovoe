@@ -87,5 +87,5 @@ next.addEventListener("click", nextSlide);
 prev.addEventListener("click", prevSlide);
 
 
-// setInterval(nextSlide, 4000);
+setInterval(nextSlide, 4000);
 
