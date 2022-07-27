@@ -19,13 +19,13 @@ const activeDot = (n) => {
   dots[n].classList.add("active");
 };
 //////перелистывание
-function rollSlider() {
-  sliderLine.style.transform = "translate(-' + index * width + 'px)";
-}
+// function rollSlider() {
+//   sliderLine.style.transform = "translate(-' + index * width + 'px)";
+// }
 
 const nextSlide = () => {
   index++;
-  offset = offset + 16.25;
+  offset = offset + 17.75;
   if (offset >= 65) {
     index = 0;
     offset = 0;
@@ -36,10 +36,10 @@ const nextSlide = () => {
 
 const prevSlide = () => {
   index--;
-  offset = offset - 16.25;
+  offset = offset - 17.75;
   if (offset < 0) {
     index = slides.length - 1;
-    offset = 48.75;
+    offset = 53.25;
   }
   sliderLine.style.left = -offset + "rem";
   activeDot(index);
@@ -82,7 +82,7 @@ next.addEventListener("click", nextSlide);
 
 prev.addEventListener("click", prevSlide);
 
-setInterval(nextSlide, 4000);
+// setInterval(nextSlide, 4000);
 
 
 
